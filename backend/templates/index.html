@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+              position: fixed;
+              top: 0;
+            }
+            
+            li {
+              float: left;
+              border-right:1px solid #bbb;
+            }
+            
+            li a {
+              display: block;
+              color: white;
+              text-align: center;
+              padding: 14px 16px;
+              text-decoration: none;
+            }
+            
+            li a:hover:not(.active) {
+              background-color: #111;
+            }
+            
+            .active {
+              background-color: #04AA6D;
+            }
+            </style>
+        <title>BeautyTime App</title>
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+    <body>
+        <h1 class="beauty" style="margin-top:70px">This is the Index page</h1>
+        <p>Hello, World!</p>
+        <input type=button onClick="
+            parent.location='http://localhost:5000/espaco'" 
+            value='click here to get espaco'>
+        <a href='/servico' style="color:green;" >Click here</a>
+        <img id="imagem" src="static/images.jpeg" alt="BeautyTime image" width="104" height="142">
+        <div>
+            <p>Welcome to BeautyTime</p>
+            <p class="beauty">Hair Done</p>
+        </div>
+        <div>
+            <p class="beauty">Do your appoiments</p>
+            <p id="nails">Nails Done</p>
+        </div>
+        <button id="buttn">Get espaco</button>
+        <br>
+        <br>
+        <div id="but"></div>
+        <br>
+        <br>
+        <button id="buttn1">Get servico</button>
+        <br>
+        <br>
+        <div id="but1"></div>
+        <br>
+        <br>
+        <button id="buttn2">Get marcacao</button>
+        <br>
+        <br>
+        <div id="but2"></div>
+        <br>
+        <br>
+        <button id="buttn3">Get espaco_servico</button>
+        <br>
+        <br>
+        <div id="but3"></div>
+        <br>
+        <br>
+        <button id="buttn4">Get cliente</button>
+        <br>
+        <br>
+        <div id="but4"></div>
+        <div id="list"></div>
+        <div id="snackbar">Espaco criado</div>
+        <ul>
+            <li><a class="active" href="">Home</a></li>
+            <li><a href="espaco">Espaco</a></li>
+            <li><a href="servico">Servico</a></li>
+            <li><a href="marcacao">Marcacao</a></li>
+        </ul>    
+        <script src="static/servico.js"> 
+        </script>
+        <script src="static/espaco.js"> 
+        </script>
+        <script src="static/marcacao.js"> 
+        </script>
+        <script src="static/espaco_servico.js"> 
+        </script>
+         <script src="static/cliente.js"> 
+        </script>
+    </body>
+</html>
+
+
+
+    
+
+
